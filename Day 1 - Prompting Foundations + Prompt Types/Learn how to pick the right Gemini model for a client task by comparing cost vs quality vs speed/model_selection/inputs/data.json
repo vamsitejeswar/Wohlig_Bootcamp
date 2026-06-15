@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "text": "Climate change refers to long-term shifts in temperatures and weather patterns. Human activities, especially burning fossil fuels, have increased greenhouse gases, leading to global warming. This results in rising sea levels, extreme weather events, and biodiversity loss. Governments and organizations are working on mitigation strategies such as renewable energy adoption and carbon reduction policies."
+  },
+  {
+    "id": 2,
+    "text": "Newton's three laws of motion describe the relationship between a body and the forces acting upon it. The first law explains inertia, the second defines force as mass times acceleration, and the third states that every action has an equal and opposite reaction. These principles form the foundation of classical mechanics."
+  },
+  {
+    "id": 3,
+    "text": "Artificial intelligence is the simulation of human intelligence in machines. It includes subfields like machine learning, natural language processing, and computer vision. AI is widely used in healthcare for diagnosis, in finance for fraud detection, and in customer service through chatbots. However, concerns exist regarding ethics, bias, and job displacement."
+  },
+  {
+    "id": 4,
+    "text": "The Indian independence movement was a series of historical events and efforts that eventually led to India's freedom from British rule in 1947. Leaders like Mahatma Gandhi promoted non-violent civil disobedience, while others like Bhagat Singh adopted revolutionary methods. The struggle involved mass protests, negotiations, and sacrifices."
+  },
+  {
+    "id": 5,
+    "text": "Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize nutrients from carbon dioxide and water. It takes place in chloroplasts and produces oxygen as a byproduct. This process is essential for life on Earth as it forms the base of the food chain."
+  },
+  {
+    "id": 6,
+    "text": "Blockchain is a distributed ledger technology that records transactions across many computers so that the record cannot be altered retroactively. It is the underlying technology behind cryptocurrencies like Bitcoin. Blockchain is also used in supply chain management, healthcare records, and digital identity verification."
+  },
+  {
+    "id": 7,
+    "text": "SpaceX, founded by Elon Musk, aims to reduce space transportation costs and enable colonization of Mars. It has developed reusable rockets like Falcon 9 and Starship. These innovations have significantly lowered the cost of launching payloads into orbit and increased launch frequency."
+  },
+  {
+    "id": 8,
+    "text": "World War II was a global conflict that lasted from 1939 to 1945. It involved most of the world's nations, including the Allies and Axis powers. The war resulted in millions of deaths, the Holocaust, and major geopolitical changes including the emergence of the United States and Soviet Union as superpowers."
+  },
+  {
+    "id": 9,
+    "text": "Machine learning is a subset of artificial intelligence that enables systems to learn from data and improve over time without being explicitly programmed. It includes supervised, unsupervised, and reinforcement learning techniques. Applications include recommendation systems, image recognition, and predictive analytics."
+  },
+  {
+    "id": 10,
+    "text": "Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used in web development, data science, artificial intelligence, and automation. Its large standard library and active community make it a popular choice among developers."
+  },
+  {
+    "id": 11,
+    "text": "The Amazon rainforest is the largest tropical rainforest in the world. It plays a crucial role in absorbing carbon dioxide and producing oxygen. It is home to millions of species of plants, animals, and insects. Deforestation poses a major threat to its ecosystem and global climate balance."
+  },
+  {
+    "id": 12,
+    "text": "Electric vehicles (EVs) are automobiles powered by electricity instead of fossil fuels. They help reduce greenhouse gas emissions and dependence on oil. EVs use rechargeable batteries and are becoming more popular due to advancements in battery technology and government incentives."
+  },
+  {
+    "id": 13,
+    "text": "Quantum computing uses principles of quantum mechanics such as superposition and entanglement to process information. Unlike classical computers, quantum computers use qubits, which can represent multiple states simultaneously. This allows them to solve certain complex problems much faster."
+  },
+  {
+    "id": 14,
+    "text": "The internet is a global network of interconnected computers that communicate using standardized protocols. It enables services like email, web browsing, and file sharing. The internet has transformed communication, commerce, education, and entertainment worldwide."
+  },
+  {
+    "id": 15,
+    "text": "Diabetes is a chronic medical condition that occurs when the body cannot properly regulate blood sugar levels. Type 1 diabetes is an autoimmune condition, while Type 2 is often linked to lifestyle factors. Management includes medication, diet control, and regular monitoring."
+  },
+  {
+    "id": 16,
+    "text": "Cricket is a bat-and-ball sport played between two teams of eleven players. It is popular in countries like India, Australia, and England. The game has multiple formats including Test matches, One Day Internationals, and T20s, each with different durations and rules."
+  },
+  {
+    "id": 17,
+    "text": "Renewable energy comes from natural sources that are constantly replenished, such as solar, wind, hydro, and geothermal energy. These sources help reduce dependence on fossil fuels and lower carbon emissions. Many countries are investing heavily in renewable energy infrastructure."
+  },
+  {
+    "id": 18,
+    "text": "DNA, or deoxyribonucleic acid, carries genetic information in living organisms. It consists of two strands forming a double helix structure. DNA determines biological traits and is passed from parents to offspring. It plays a key role in genetics, evolution, and biotechnology."
+  },
+  {
+    "id": 19,
+    "text": "Cloud computing delivers computing services such as servers, storage, databases, and software over the internet. It allows businesses to scale resources on demand without owning physical infrastructure. Major providers include AWS, Google Cloud, and Microsoft Azure."
+  },
+  {
+    "id": 20,
+    "text": "Social media platforms enable users to create, share, and interact with content online. Platforms like Facebook, Instagram, and X have transformed communication, marketing, and news distribution. However, concerns include misinformation, addiction, and privacy issues."
+  }
+]
