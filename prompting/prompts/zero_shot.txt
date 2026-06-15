@@ -1,0 +1,14 @@
+Classify the following customer support ticket into exactly one of these 8 categories:
+
+- Refund
+- Shipping
+- Login
+- Payment
+- Account
+- Product Quality
+- Order Change
+- Other
+
+Respond with ONLY the category name, nothing else.
+
+Ticket: {ticket_text}

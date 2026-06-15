@@ -1,0 +1,31 @@
+Classify customer support tickets into one of these 8 categories: Refund, Shipping, Login, Payment, Account, Product Quality, Order Change, Other.
+
+Here are examples:
+
+Ticket: I want to return my order and get my money back.
+Category: Refund
+
+Ticket: My package hasn't arrived in 3 weeks and tracking is stuck.
+Category: Shipping
+
+Ticket: I can't sign in to my account. It says wrong password.
+Category: Login
+
+Ticket: I was charged twice for the same order.
+Category: Payment
+
+Ticket: Someone hacked my account and changed the email.
+Category: Account
+
+Ticket: The phone screen cracked after one drop. Very fragile.
+Category: Product Quality
+
+Ticket: Can I switch my delivery from ground to express?
+Category: Order Change
+
+Ticket: Do you have a loyalty program?
+Category: Other
+
+Now classify this ticket. Respond with ONLY the category name:
+
+Ticket: {ticket_text}
