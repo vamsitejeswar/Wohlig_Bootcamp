@@ -3,24 +3,24 @@ ticket_id,ticket_text,ground_truth,zero_shot_pred,few_shot_pred,role_based_pred,
 2,The product arrived damaged. Can you process a refund for order #48291?,Refund,Refund,Refund,Refund,True,True,True
 3,I cancelled within 24 hours but still haven't received my money back. It's been 10 days.,Refund,Refund,Refund,Refund,True,True,True
 4,The software license key I bought doesn't work. I need a refund as per your 30-day policy.,Refund,Refund,Refund,Refund,True,True,True
-5,My order arrived and it's the wrong size. I'd like to return and get a refund.,Refund,Refund,Refund,Refund,True,True,True
+5,My order arrived and it's the wrong size. I'd like to return and get a refund.,Refund,Product Quality,Refund,Refund,False,True,True
 6,Where is my package? Tracking number 1Z999AA10123456784 shows no movement in 5 days.,Shipping,Shipping,Shipping,Shipping,True,True,True
 7,I paid for express shipping but my order still hasn't shipped after 4 business days.,Shipping,Shipping,Shipping,Shipping,True,True,True
-8,The delivery address is wrong on my order. Can you update it before it goes out?,Shipping,Order Change,Order Change,Order Change,False,False,False
+8,The delivery address is wrong on my order. Can you update it before it goes out?,Shipping,Shipping,Order Change,Order Change,True,False,False
 9,My package says delivered but I never received it. Can you check with the carrier?,Shipping,Shipping,Shipping,Shipping,True,True,True
 10,Do you ship to APO addresses? I'm deployed overseas and need my order.,Shipping,Shipping,Shipping,Shipping,True,True,True
 11,I forgot my password and the reset link is not being sent to my email.,Login,Login,Login,Login,True,True,True
 12,I keep getting 'invalid credentials' even after resetting my password three times.,Login,Login,Login,Login,True,True,True
-13,My account was locked after too many attempts. Please unlock it.,Login,Login,Login,Login,True,True,True
+13,My account was locked after too many attempts. Please unlock it.,Login,Login,Account,Login,True,False,True
 14,I can't log in with Google OAuth. It says 'account not found' but I used it before.,Login,Login,Login,Login,True,True,True
 15,My card was charged twice for the same order. I see two pending transactions.,Payment,Payment,Payment,Payment,True,True,True
-16,I used a promo code but the discount wasn't applied at checkout. Can I get the difference back?,Payment,Refund,Payment,Payment,False,True,True
+16,I used a promo code but the discount wasn't applied at checkout. Can I get the difference back?,Payment,Payment,Payment,Payment,True,True,True
 17,The payment went through but I got an error page. Is my order confirmed?,Payment,Payment,Payment,Payment,True,True,True
 18,My PayPal payment was deducted but the order status still shows 'pending payment'.,Payment,Payment,Payment,Payment,True,True,True
 19,I want to delete my account permanently. How do I do that?,Account,Account,Account,Account,True,True,True
 20,Someone changed my email address without my permission. I think my account is compromised.,Account,Account,Account,Account,True,True,True
 21,Can I merge two accounts? I accidentally created a duplicate.,Account,Account,Account,Account,True,True,True
-22,I changed my phone number and now I can't receive SMS verification codes.,Account,Login,Account,Login,False,True,False
+22,I changed my phone number and now I can't receive SMS verification codes.,Account,Account,Account,Account,True,True,True
 23,The laptop I bought overheats after 30 minutes of use. This is a known defect.,Product Quality,Product Quality,Product Quality,Product Quality,True,True,True
 24,The T-shirt fabric is much thinner than advertised. Feels like it will tear easily.,Product Quality,Product Quality,Product Quality,Product Quality,True,True,True
 25,The Bluetooth earbuds only last 2 hours instead of the advertised 8 hours.,Product Quality,Product Quality,Product Quality,Product Quality,True,True,True
