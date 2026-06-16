@@ -1,0 +1,11 @@
+```json
+{
+  "product_name": "EcoClean",
+  "category": "Detergent",
+  "key_features": [
+    "Plant-based",
+    "Safe for baby clothes"
+  ],
+  "target_audience": "Families with babies"
+}
+```

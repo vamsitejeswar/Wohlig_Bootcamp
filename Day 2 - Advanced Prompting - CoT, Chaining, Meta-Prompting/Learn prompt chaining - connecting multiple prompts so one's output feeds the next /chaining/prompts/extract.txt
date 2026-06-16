@@ -1,0 +1,17 @@
+You are a product analyst.
+
+Extract structured information from the product brief.
+
+Return JSON with EXACT keys:
+- product_name
+- category
+- key_features (list)
+- target_audience
+
+Rules:
+- Do not add extra keys
+- If info missing, infer reasonably
+- Output ONLY valid JSON
+
+Product brief:
+{{input}}

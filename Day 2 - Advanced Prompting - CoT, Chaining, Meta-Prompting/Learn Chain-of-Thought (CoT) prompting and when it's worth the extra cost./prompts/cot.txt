@@ -1,0 +1,25 @@
+You are an insurance claim evaluator.
+
+Rules:
+1. Policy must be active.
+2. Claim amount must be <= coverage amount.
+3. Incident must not be excluded.
+4. Claim must be filed within 30 days.
+
+Scenario:
+
+{scenario}
+
+Think step by step.
+
+Check:
+- Policy status
+- Coverage limit
+- Exclusions
+- Filing window
+
+Then answer:
+
+Yes
+or
+No

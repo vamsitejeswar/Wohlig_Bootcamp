@@ -1,0 +1,12 @@
+```json
+{
+  "product_name": "ZenithTech Smartwatch",
+  "category": "Smartwatch",
+  "key_features": [
+    "health tracking",
+    "sleep tracking",
+    "fitness tracking"
+  ],
+  "target_audience": "young professionals"
+}
+```

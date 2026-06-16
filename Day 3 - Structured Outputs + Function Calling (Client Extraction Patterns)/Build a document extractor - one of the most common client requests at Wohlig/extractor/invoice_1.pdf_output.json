@@ -1,0 +1,40 @@
+{
+  "invoice_id": "INV-2023-9041",
+  "vendor_name": "Global Tech Solutions LLC",
+  "customer_name": "Acme Corp",
+  "billing_address": {
+    "street": "1450 Innovation Drive",
+    "city": "San Jose",
+    "state": "CA",
+    "pincode": "95112"
+  },
+  "shipping_address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "pincode": ""
+  },
+  "items": [
+    {
+      "item_name": "Enterprise Cloud Hosting (Annual)",
+      "quantity": 1,
+      "unit_price": 12500.00,
+      "total_price": 12500.00
+    },
+    {
+      "item_name": "Premium Support SLA - Tier 1",
+      "quantity": 12,
+      "unit_price": 500.00,
+      "total_price": 6000.00
+    },
+    {
+      "item_name": "Data Migration Services",
+      "quantity": 40,
+      "unit_price": 150.00,
+      "total_price": 6000.00
+    }
+  ],
+  "total_amount": 26521.25,
+  "status": "UNPAID",
+  "notes": "Thank you for your business. For any billing inquiries, contact billing@globaltech.example.com."
+}

@@ -1,0 +1,46 @@
+{
+  "invoice_id": "CCM-2024-001",
+  "vendor_name": "Creative Catalyst Media",
+  "customer_name": "Starlight Retail Group",
+  "billing_address": {
+    "street": "88 Sydney Road",
+    "city": "Melbourne",
+    "state": "VIC",
+    "pincode": "3000"
+  },
+  "shipping_address": {
+    "street": "88 Sydney Road",
+    "city": "Melbourne",
+    "state": "VIC",
+    "pincode": "3000"
+  },
+  "items": [
+    {
+      "item_name": "Q1 Digital Marketing Campaign Management",
+      "quantity": 3,
+      "unit_price": 2500.00,
+      "total_price": 7500.00
+    },
+    {
+      "item_name": "Video Asset Production (3x 30s clips)",
+      "quantity": 1,
+      "unit_price": 4200.00,
+      "total_price": 4200.00
+    },
+    {
+      "item_name": "Influencer Outreach Coordination",
+      "quantity": 10,
+      "unit_price": 150.00,
+      "total_price": 1500.00
+    },
+    {
+      "item_name": "Platform Ad Spend Reimbursement (Feb)",
+      "quantity": 1,
+      "unit_price": 8340.50,
+      "total_price": 8340.50
+    }
+  ],
+  "total_amount": 22860.50,
+  "status": "UNPAID",
+  "notes": "Please deposit funds to the listed account."
+}

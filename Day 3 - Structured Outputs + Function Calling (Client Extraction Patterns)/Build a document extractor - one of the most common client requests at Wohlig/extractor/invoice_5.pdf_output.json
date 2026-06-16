@@ -1,0 +1,46 @@
+{
+  "invoice_id": "AL-993-2024",
+  "vendor_name": "Apex Logistics & Freight",
+  "customer_name": "National Builders Supply",
+  "billing_address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "pincode": ""
+  },
+  "shipping_address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "pincode": ""
+  },
+  "items": [
+    {
+      "item_name": "FTL Freight Transportation (Trailer #4992)",
+      "quantity": 1,
+      "unit_price": 2400.00,
+      "total_price": 2400.00
+    },
+    {
+      "item_name": "Fuel Surcharge (Variable rate index)",
+      "quantity": 1,
+      "unit_price": 350.50,
+      "total_price": 350.50
+    },
+    {
+      "item_name": "Toll Fees Reimbursement",
+      "quantity": 1,
+      "unit_price": 85.00,
+      "total_price": 85.00
+    },
+    {
+      "item_name": "Lumper Services at Destination",
+      "quantity": 1,
+      "unit_price": 150.00,
+      "total_price": 150.00
+    }
+  ],
+  "total_amount": 2985.50,
+  "status": "PAID",
+  "notes": "Payment received via ACH transfer on 03-02-2024."
+}

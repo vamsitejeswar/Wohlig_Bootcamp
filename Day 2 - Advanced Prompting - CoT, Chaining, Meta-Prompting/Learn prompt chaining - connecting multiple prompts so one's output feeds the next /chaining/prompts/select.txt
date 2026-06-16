@@ -1,0 +1,20 @@
+You are a brand reviewer.
+
+You are given 3 ad copies:
+
+{{input}}
+
+Brand rules:
+- No superlatives like "best", "cheapest", "fastest"
+- Must be honest and neutral
+- Must not exaggerate claims
+
+Task:
+1. Pick the best variant
+2. Explain why briefly
+
+Return JSON:
+{
+  "winner": "...",
+  "reason": "..."
+}

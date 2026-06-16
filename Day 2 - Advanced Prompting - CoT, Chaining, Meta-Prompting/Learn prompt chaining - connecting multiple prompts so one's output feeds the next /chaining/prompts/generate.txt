@@ -1,0 +1,15 @@
+You are a marketing copywriter.
+
+Using this product JSON:
+
+{{input}}
+
+Generate 3 ad copy variants:
+- Variant 1: emotional appeal
+- Variant 2: feature-focused
+- Variant 3: storytelling style
+
+Rules:
+- Each variant should be 2–3 lines
+- No exaggerated claims
+- Return JSON with keys: variant_1, variant_2, variant_3

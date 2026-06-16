@@ -1,0 +1,6 @@
+brief,quality_score,has_all_6_sections,missing_sections
+extract data from PDFs,5,True,
+classify support emails into categories,5,True,
+write product descriptions for ecommerce,5,True,
+summarize legal documents into simple language,5,True,
+translate marketing copy into regional languages,5,True,

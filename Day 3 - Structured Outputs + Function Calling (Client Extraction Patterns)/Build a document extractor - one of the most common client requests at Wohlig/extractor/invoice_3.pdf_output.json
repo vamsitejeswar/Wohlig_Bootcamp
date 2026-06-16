@@ -1,0 +1,46 @@
+{
+  "invoice_id": "OE-2024-0099",
+  "vendor_name": "ORIENTAL ELECTRONICS LTD",
+  "customer_name": "TechWave Innovations",
+  "billing_address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "pincode": ""
+  },
+  "shipping_address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "pincode": ""
+  },
+  "items": [
+    {
+      "item_name": "Microcontroller Unit 32-bit",
+      "quantity": 5000,
+      "unit_price": 0.85,
+      "total_price": 4250.00
+    },
+    {
+      "item_name": "Printed Circuit Board",
+      "quantity": 5000,
+      "unit_price": 1.10,
+      "total_price": 5500.00
+    },
+    {
+      "item_name": "Air Freight Charges",
+      "quantity": 1,
+      "unit_price": 850.00,
+      "total_price": 850.00
+    },
+    {
+      "item_name": "Late Payment Surcharge",
+      "quantity": 1,
+      "unit_price": 250.00,
+      "total_price": 250.00
+    }
+  ],
+  "total_amount": 11718.00,
+  "status": "UNPAID",
+  "notes": "Please remit payment immediately to avoid further penalties."
+}

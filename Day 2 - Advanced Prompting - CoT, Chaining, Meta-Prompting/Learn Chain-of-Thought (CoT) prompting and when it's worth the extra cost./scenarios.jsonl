@@ -1,0 +1,29 @@
+{"scenario_id":1,"scenario":"Customer has a Health Basic policy active for 40 days and is claiming hospitalization expenses. The policy has a 60-day waiting period for hospitalization claims.","ground_truth":"No"}
+
+{"scenario_id":2,"scenario":"Customer has a Health Premium policy active for 120 days and is claiming emergency surgery expenses. Emergency surgeries are covered after the 60-day waiting period.","ground_truth":"Yes"}
+
+{"scenario_id":3,"scenario":"Customer has a Vehicle Standard policy that expired last month. The customer is claiming accident repair costs from an accident that occurred yesterday.","ground_truth":"No"}
+
+{"scenario_id":4,"scenario":"Customer has a Vehicle Premium policy with collision coverage active. The customer is claiming repair costs after an accident.","ground_truth":"Yes"}
+
+{"scenario_id":5,"scenario":"Customer has a Travel Shield policy and lost baggage during a covered international trip. Baggage loss is included in coverage.","ground_truth":"Yes"}
+
+{"scenario_id":6,"scenario":"Customer has a Health Basic policy active for 20 days and is claiming treatment for a pre-existing condition. Pre-existing conditions are covered only after 365 days.","ground_truth":"No"}
+
+{"scenario_id":7,"scenario":"Customer has a Health Premium policy active for 500 days and is claiming treatment for a pre-existing condition. Pre-existing conditions are covered after 365 days.","ground_truth":"Yes"}
+
+{"scenario_id":8,"scenario":"Customer has a Vehicle Premium policy active. The customer is claiming engine damage caused by driving through flood water. Flood-related engine damage is excluded from coverage.","ground_truth":"No"}
+
+{"scenario_id":9,"scenario":"Customer has a Travel Shield policy active during an international trip. The customer incurred emergency medical expenses abroad, which are included in coverage.","ground_truth":"Yes"}
+
+{"scenario_id":10,"scenario":"Customer has a Travel Shield policy that expired before the trip started. The customer is claiming trip cancellation expenses.","ground_truth":"No"}
+
+{"scenario_id":11,"scenario":"Customer has a Home Secure policy active. A fire damaged part of the insured property. Fire damage is included in coverage.","ground_truth":"Yes"}
+
+{"scenario_id":12,"scenario":"Customer has a Home Secure policy active. The customer is claiming damage caused by gradual wear and tear. Wear and tear is excluded from coverage.","ground_truth":"No"}
+
+{"scenario_id":13,"scenario":"Customer has a Vehicle Standard policy active with a coverage limit of $5000. The customer is claiming accident repair costs of $7000.","ground_truth":"No"}
+
+{"scenario_id":14,"scenario":"Customer has a Vehicle Premium policy active with a coverage limit of $15000. The customer is claiming accident repair costs of $8000.","ground_truth":"Yes"}
+
+{"scenario_id":15,"scenario":"Customer has a Health Premium policy active for 200 days. The customer is claiming hospitalization expenses for a covered illness after completing the waiting period.","ground_truth":"Yes"}

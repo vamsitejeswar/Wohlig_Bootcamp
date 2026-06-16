@@ -1,0 +1,40 @@
+{
+  "invoice_id": "MM-884920",
+  "vendor_name": "MULLER MANUFACTURING GMBH",
+  "customer_name": "Sterling Industrial Partners",
+  "billing_address": {
+    "street": "Industriestrasse 45",
+    "city": "Berlin",
+    "state": "Berlin",
+    "pincode": "10115"
+  },
+  "shipping_address": {
+    "street": "Industriestrasse 45",
+    "city": "Berlin",
+    "state": "Berlin",
+    "pincode": "10115"
+  },
+  "items": [
+    {
+      "item_name": "Hydraulic Pump Assembly X-400",
+      "quantity": 4,
+      "unit_price": 1200.00,
+      "total_price": 4800.00
+    },
+    {
+      "item_name": "Sealing Ring Set (Industrial)",
+      "quantity": 50,
+      "unit_price": 12.50,
+      "total_price": 625.00
+    },
+    {
+      "item_name": "Express Shipping & Handling",
+      "quantity": 1,
+      "unit_price": 150.00,
+      "total_price": 150.00
+    }
+  ],
+  "total_amount": 6634.25,
+  "status": "PAID",
+  "notes": "Payment received with thanks on 17.04.2024."
+}

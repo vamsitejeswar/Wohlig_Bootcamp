@@ -1,0 +1,34 @@
+{
+  "invoice_id": "JD-104",
+  "vendor_name": "Freelance Consulting Services - Jane Doe",
+  "customer_name": "Marketing Pros Inc.",
+  "billing_address": {
+    "street": "45 Elm Street, Apt 3B",
+    "city": "Toronto",
+    "state": "ON",
+    "pincode": "M5V 2H1"
+  },
+  "shipping_address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "pincode": ""
+  },
+  "items": [
+    {
+      "item_name": "Brand strategy workshops",
+      "quantity": 25,
+      "unit_price": 100.00,
+      "total_price": 2500.00
+    },
+    {
+      "item_name": "Social media audit and reporting",
+      "quantity": 1,
+      "unit_price": 1500.00,
+      "total_price": 1500.00
+    }
+  ],
+  "total_amount": 4068.00,
+  "status": "UNPAID",
+  "notes": "Please pay within 15 days via Interac e-Transfer."
+}

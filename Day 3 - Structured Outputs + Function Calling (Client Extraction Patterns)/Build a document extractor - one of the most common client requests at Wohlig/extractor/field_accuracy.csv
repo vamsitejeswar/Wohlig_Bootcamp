@@ -1,0 +1,31 @@
+file,field,extracted,ground_truth,match
+invoice_3.pdf,invoice_id,OE-2024-0099,,False
+invoice_3.pdf,vendor_name,ORIENTAL ELECTRONICS LTD,,False
+invoice_3.pdf,customer_name,TechWave Innovations,,False
+invoice_3.pdf,total_amount,11718.0,,False
+invoice_3.pdf,status,UNPAID,,False
+invoice_2.pdf,invoice_id,MM-884920,,False
+invoice_2.pdf,vendor_name,MULLER MANUFACTURING GMBH,,False
+invoice_2.pdf,customer_name,Sterling Industrial Partners,,False
+invoice_2.pdf,total_amount,6634.25,,False
+invoice_2.pdf,status,PAID,,False
+invoice_1.pdf,invoice_id,INV-2023-9041,,False
+invoice_1.pdf,vendor_name,Global Tech Solutions LLC,,False
+invoice_1.pdf,customer_name,Acme Corp,,False
+invoice_1.pdf,total_amount,26521.25,,False
+invoice_1.pdf,status,UNPAID,,False
+invoice_5.pdf,invoice_id,AL-993-2024,,False
+invoice_5.pdf,vendor_name,Apex Logistics & Freight,,False
+invoice_5.pdf,customer_name,National Builders Supply,,False
+invoice_5.pdf,total_amount,2985.5,,False
+invoice_5.pdf,status,PAID,,False
+invoice_4.pdf,invoice_id,JD-104,,False
+invoice_4.pdf,vendor_name,Freelance Consulting Services - Jane Doe,,False
+invoice_4.pdf,customer_name,Marketing Pros Inc.,,False
+invoice_4.pdf,total_amount,4068.0,,False
+invoice_4.pdf,status,UNPAID,,False
+invoice_6.pdf,invoice_id,CCM-2024-001,,False
+invoice_6.pdf,vendor_name,Creative Catalyst Media,,False
+invoice_6.pdf,customer_name,Starlight Retail Group,,False
+invoice_6.pdf,total_amount,22860.5,,False
+invoice_6.pdf,status,UNPAID,,False
