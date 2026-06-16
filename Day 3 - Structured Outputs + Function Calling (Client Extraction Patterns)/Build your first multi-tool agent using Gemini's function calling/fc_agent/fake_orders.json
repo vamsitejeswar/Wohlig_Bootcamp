@@ -1,0 +1,52 @@
+[
+  {
+    "order_id": "1001",
+    "customer_name": "Rahul Sharma",
+    "product": "Wireless Mouse",
+    "category": "electronics",
+    "price": 899,
+    "status": "delivered",
+    "shipping_status": "Delivered on 2026-05-10",
+    "refund_eligible": true
+  },
+  {
+    "order_id": "1002",
+    "customer_name": "Ananya Rao",
+    "product": "Running Shoes",
+    "category": "fashion",
+    "price": 2499,
+    "status": "in-transit",
+    "shipping_status": "Arriving tomorrow",
+    "refund_eligible": true
+  },
+  {
+    "order_id": "1003",
+    "customer_name": "Vikram Patel",
+    "product": "Office Chair",
+    "category": "furniture",
+    "price": 5999,
+    "status": "returned",
+    "shipping_status": "Returned to warehouse",
+    "refund_eligible": false
+  },
+  {
+    "order_id": "1004",
+    "customer_name": "Priya Singh",
+    "product": "Bluetooth Speaker",
+    "category": "electronics",
+    "price": 3499,
+    "status": "disputed",
+    "shipping_status": "Delivery disputed",
+    "refund_eligible": true
+  },
+  {
+    "order_id": "1005",
+    "customer_name": "Arjun Kumar",
+    "product": "Yoga Mat",
+    "category": "fitness",
+    "price": 799,
+    "status": "delivered",
+    "shipping_status": "Delivered on 2026-05-12",
+    "refund_eligible": true
+  }
+]
