@@ -1,0 +1,18 @@
+input_id,first_try_valid,final_valid,num_retries,errors_seen,total_cost
+input_01.txt,False,True,2,"1 validation error for ContactCard
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  ""name"": ""J...: ""560001""\n  }\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid",0.02234
+input_02.txt,False,False,3,"1 validation error for ContactCard
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  ""name"": ""R...: ""500081""\n  }\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid; 1 validation error for ContactCard
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  ""name"": ""R...: ""500081""\n  }\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid; 1 validation error for ContactCard
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  ""name"": ""R...: ""500081""\n  }\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid",0.03594
+input_03.txt,False,False,3,"1 validation error for ContactCard
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  ""name"": ""P...: ""570017""\n  }\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid; 1 validation error for ContactCard
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  ""name"": ""P...: ""570017""\n  }\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid; 1 validation error for ContactCard
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='```json\n{\n  ""name"": ""P...: ""570017""\n  }\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid",0.03618
