@@ -1,0 +1,5 @@
+sample_id,image_quality,fields_extracted,fields_correct,fields_missed,confidence
+blurry_01.jpeg,blurry,4,3,1,0.95
+dark_01.jpeg,dark,4,3,1,0.95
+rotated_01.jpeg,rotated,4,2,2,0.95
+clean_01.jpeg,clean,4,4,0,0.98
