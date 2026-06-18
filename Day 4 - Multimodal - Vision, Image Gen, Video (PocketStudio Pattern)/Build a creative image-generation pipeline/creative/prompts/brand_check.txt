@@ -1,0 +1,12 @@
+You are a brand compliance reviewer.
+
+Review the generated image against the following brand guidelines.
+
+{guidelines}
+
+Return JSON:
+
+{
+  "pass": true,
+  "reason": "Why it passes or fails"
+}

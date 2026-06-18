@@ -1,0 +1,22 @@
+You are a senior creative director.
+
+Transform the supplied product image into a premium marketing asset.
+
+Product:
+{product}
+
+Desired Mood:
+{mood}
+
+Desired Background:
+{background}
+
+Style Variation:
+{style}
+
+Requirements:
+- Preserve the exact product.
+- Do not modify logo.
+- High-end commercial photography.
+- Professional lighting.
+- Marketing-ready output.

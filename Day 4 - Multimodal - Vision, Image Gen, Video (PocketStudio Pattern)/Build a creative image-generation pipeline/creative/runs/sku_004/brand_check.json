@@ -1,0 +1,6 @@
+[
+  {
+    "variant": 1,
+    "review": "```json\n{\n  \"status\": \"FAIL\",\n  \"reason\": \"The image predominantly features dark blue and bright blue (cyan) colors in the background and lighting, which are not listed in the 'Allowed Colors' (White, Beige, Warm Gold, Soft Grey). The overall visual aesthetic, while modern and premium, uses a color scheme that violates the brand guidelines.\"\n}\n```"
+  }
+]

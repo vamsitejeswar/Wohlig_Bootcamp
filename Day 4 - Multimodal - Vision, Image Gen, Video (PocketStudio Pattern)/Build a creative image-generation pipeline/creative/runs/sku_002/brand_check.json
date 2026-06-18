@@ -1,0 +1,6 @@
+[
+  {
+    "variant": 1,
+    "review": "```json\n{\n  \"status\": \"FAIL\",\n  \"reason\": \"The image fails to meet multiple brand guidelines. The background color is black, which is not explicitly listed in 'Allowed Colors' (only White, Beige, Warm Gold, Soft Grey are allowed). The visual environment is a plain dark background, not a 'Premium lifestyle environment' as specified in 'Allowed Visuals'. Most critically, the 'Product logo must remain visible' requirement is not met, as no logo is visible on the watch in the image.\"\n}\n```"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "variant": 1,
+    "review": "```json\n{\n  \"status\": \"FAIL\",\n  \"reason\": \"Product logo is not visible on the bottle, which violates the 'Product logo must remain visible' requirement.\"\n}\n```"
+  }
+]
