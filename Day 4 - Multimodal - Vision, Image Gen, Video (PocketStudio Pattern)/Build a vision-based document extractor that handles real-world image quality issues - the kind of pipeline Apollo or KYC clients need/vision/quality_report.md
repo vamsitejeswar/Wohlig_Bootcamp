@@ -6,10 +6,10 @@
 
 | Type | Count |
 |--------|--------|
-| Clean | 3 |
-| Rotated | 3 |
-| Dark | 2 |
-| Blurry | 2 |
+| Clean | 1 |
+| Rotated | 1 |
+| Dark | 1 |
+| Blurry | 1 |
 
 ---
 
@@ -17,10 +17,10 @@
 
 | Quality Bucket | Accuracy |
 |----------------|----------|
-| Clean | TBD |
-| Rotated | TBD |
-| Dark | TBD |
-| Blurry | TBD |
+| Clean | 75 |
+| Rotated | 75 |
+| Dark | 50 |
+| Blurry | 100 |
 
 ---
 
