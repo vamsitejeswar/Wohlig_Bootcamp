@@ -197,97 +197,42 @@ def create_table():
         exists_ok=True
     )
 
-    print(
-        f"\nTable ready: {TABLE_ID}"
-    )
+    print(f"\nTable ready: {TABLE_ID}")
 
 # =========================================================
 # INSERT CHUNK
+# Returns the stored metadata dict, or None on error.
+# chunk_store accumulation and JSON save happen in ingest_corpus.
 # =========================================================
 
-chunk_store = []
-
-def insert_chunk(
-    chunk,
-    embedding,
-    metadata
-):
+def insert_chunk(chunk, embedding, metadata):
 
     chunk_id = str(uuid.uuid4())
 
     row = {
-
-        "chunk_id": chunk_id,
-
-        "doc_id": metadata["doc_id"],
-
-        "page_number": metadata[
-            "page_number"
-        ],
-
-        "text": chunk,
-
-        "embedding": embedding
+        "chunk_id":    chunk_id,
+        "doc_id":      metadata["doc_id"],
+        "page_number": metadata["page_number"],
+        "text":        chunk,
+        "embedding":   embedding
     }
 
     # =====================================================
     # INSERT INTO BIGQUERY
     # =====================================================
 
-    errors = bq_client.insert_rows_json(
-        TABLE_ID,
-        [row]
-    )
+    errors = bq_client.insert_rows_json(TABLE_ID, [row])
 
     if errors:
+        print(f"\nInsert Errors:\n{errors}")
+        return None
 
-        print(
-            f"\nInsert Errors:\n{errors}"
-        )
-
-    else:
-
-        # =====================================================
-        # SAVE LOCALLY
-        # =====================================================
-
-        chunk_store.append({
-
-            "chunk_id": chunk_id,
-
-            "doc_id": metadata["doc_id"],
-
-            "page_number": metadata[
-                "page_number"
-            ],
-
-            "text": chunk
-        })
-
-        # =====================================================
-        # CREATE DIR
-        # =====================================================
-
-        embeddings_dir = BASE_DIR / "embeddings"
-
-        embeddings_dir.mkdir(exist_ok=True)
-
-        # =====================================================
-        # SAVE JSON
-        # =====================================================
-
-        with open(
-            embeddings_dir / "chunk_store.json",
-            "w",
-            encoding="utf-8"
-        ) as f:
-
-            json.dump(
-                chunk_store,
-                f,
-                indent=2,
-                ensure_ascii=False
-            )
+    return {
+        "chunk_id":    chunk_id,
+        "doc_id":      metadata["doc_id"],
+        "page_number": metadata["page_number"],
+        "text":        chunk
+    }
 
 # =========================================================
 # BUILD VECTOR INDEX
@@ -359,13 +304,16 @@ def build_vector_index():
 
 def ingest_corpus():
 
-    pdf_files = list(
-        CORPUS_DIR.glob("*.pdf")
-    )
+    pdf_files = list(CORPUS_DIR.glob("*.pdf"))
 
     print(f"\nCorpus: {CORPUS_DIR}")
-
     print(f"\nFound {len(pdf_files)} PDFs")
+
+    # =====================================================
+    # chunk_store collects inserted rows for local JSON save
+    # =====================================================
+
+    chunk_store = []
 
     for pdf_file in tqdm(pdf_files):
 
@@ -414,18 +362,24 @@ def ingest_corpus():
                 # INSERT
                 # =====================================================
 
-                insert_chunk(
-                    chunk,
-                    embedding,
-                    metadata
-                )
+                stored = insert_chunk(chunk, embedding, metadata)
+
+                if stored:
+                    chunk_store.append(stored)
+
+    # =====================================================
+    # SAVE chunk_store TO LOCAL JSON (once, after all inserts)
+    # =====================================================
+
+    embeddings_dir = BASE_DIR / "embeddings"
+    embeddings_dir.mkdir(exist_ok=True)
+
+    with open(embeddings_dir / "chunk_store.json", "w", encoding="utf-8") as f:
+        json.dump(chunk_store, f, indent=2, ensure_ascii=False)
 
     print("\n===================================")
-
     print("BigQuery ingestion completed!")
-
     print(f"\nTotal chunks: {len(chunk_store)}")
-
     print("\n===================================")
 
 # =========================================================

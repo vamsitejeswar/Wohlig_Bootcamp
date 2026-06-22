@@ -5,7 +5,6 @@
 
 import os
 import csv
-import time
 import json
 from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
@@ -182,9 +181,7 @@ def vector_search(
     top_k=10
 ):
 
-    print(
-        f"\n=============================="
-    )
+    print(f"\n==============================")
 
     print(f"\n{question_id}| {question}")
 
@@ -192,20 +189,7 @@ def vector_search(
     # EMBED QUERY
     # =====================================================
 
-    embed_start = time.time()
-
-    embedding = generate_embedding(
-        question
-    )
-
-    embedding_latency_ms = (
-        time.time() - embed_start
-    ) * 1000
-
-    print(
-        f"\nEmbedding Latency: "
-        f"{embedding_latency_ms:.2f} ms"
-    )
+    embedding = generate_embedding(question)
 
     # =====================================================
     # EMBEDDING TO SQL ARRAY STRING
@@ -222,7 +206,6 @@ def vector_search(
     sql = f"""
 
     SELECT
-        base.chunk_id,
         base.doc_id,
         base.page_number,
         base.text,
@@ -251,17 +234,9 @@ def vector_search(
     # EXECUTE QUERY
     # =====================================================
 
-    overall_start = time.time()
-
     query_job = bq_client.query(sql)
 
-    results = list(
-        query_job.result()
-    )
-
-    overall_latency_ms = (
-        time.time() - overall_start
-    ) * 1000
+    results = list(query_job.result())
 
     # =====================================================
     # BIGQUERY EXECUTION LATENCY (from job metadata)
@@ -292,11 +267,6 @@ def vector_search(
     print(
         f"\nBQ Execution Latency: "
         f"{bq_execution_latency_ms:.2f} ms"
-    )
-
-    print(
-        f"\nOverall Latency: "
-        f"{overall_latency_ms:.2f} ms"
     )
 
     print(
@@ -376,30 +346,15 @@ def vector_search(
     # PRINT TOP RESULTS
     # =====================================================
 
-    print(
-        "\n==================================="
-    )
+    print("\n===================================")
 
     for idx, row in enumerate(results):
 
         print(f"\nResult {idx + 1}")
-
-        print(
-            f"\nDistance: {row.distance}"
-        )
-
-        print(
-            f"\nDocument: {row.doc_id}"
-        )
-
-        print(
-            f"\nPage: {row.page_number}"
-        )
-
-        print(
-            f"\nText:\n{row.text[:500]}"
-        )
-
+        print(f"\nDistance: {row.distance}")
+        print(f"\nDocument: {row.doc_id}")
+        print(f"\nPage: {row.page_number}")
+        print(f"\nText:\n{row.text[:500]}")
         print(
             "\n-----------------------------------"
         )
@@ -440,18 +395,7 @@ if __name__ == "__main__":
             top_k=10
         )
 
-    print(
-        "\n==================================="
-    )
-
-    print(
-        "\nAll queries complete."
-    )
-
-    print(
-        f"\nResults: {RESULTS_CSV}"
-    )
-
-    print(
-        "\n==================================="
-    )
+    print("\n===================================")
+    print("\nAll queries complete.")
+    print(f"\nResults: {RESULTS_CSV}")
+    print("\n===================================")
