@@ -1,0 +1,25 @@
+{"question_id":1,"question":"What is the Föllmer process?","ground_truth_doc":"doc1"}
+{"question_id":2,"question":"What is the main objective of this paper?","ground_truth_doc":"doc1"}
+{"question_id":3,"question":"What error metric is studied in this paper?","ground_truth_doc":"doc1"}
+{"question_id":4,"question":"What does DDPM stand for?","ground_truth_doc":"doc1"}
+{"question_id":5,"question":"What is the score function in diffusion models?","ground_truth_doc":"doc1"}
+{"question_id":6,"question":"What are the three main contributions of the paper?","ground_truth_doc":"doc1"}
+{"question_id":7,"question":"What variance schedule is specifically mentioned in the paper?","ground_truth_doc":"doc1"}
+{"question_id":8,"question":"What inequality is implied by the Lipschitz-type conditions?","ground_truth_doc":"doc1"}
+{"question_id":9,"question":"What transportation cost inequality is discussed?","ground_truth_doc":"doc1"}
+{"question_id":10,"question":"What type of target distributions are considered in the paper?","ground_truth_doc":"doc1"}
+{"question_id":11,"question":"What process is traditionally used to analyze DDPMs?","ground_truth_doc":"doc1"}
+{"question_id":12,"question":"What process does this paper use instead of the reverse Ornstein–Uhlenbeck process?","ground_truth_doc":"doc1"}
+{"question_id":13,"question":"What is the relationship between the Föllmer process and Brownian motion?","ground_truth_doc":"doc1"}
+{"question_id":14,"question":"What distribution does the Föllmer process match at time 1?","ground_truth_doc":"doc1"}
+{"question_id":15,"question":"What stochastic differential equation is satisfied by the Föllmer process?","ground_truth_doc":"doc1"}
+{"question_id":16,"question":"What is the Föllmer drift?","ground_truth_doc":"doc1"}
+{"question_id":17,"question":"What information-theoretic quantity is related to the Föllmer drift?","ground_truth_doc":"doc1"}
+{"question_id":18,"question":"What is relative entropy in this paper?","ground_truth_doc":"doc1"}
+{"question_id":19,"question":"What is the relative Fisher information?","ground_truth_doc":"doc1"}
+{"question_id":20,"question":"What is the Slepian interpolation?","ground_truth_doc":"doc1"}
+{"question_id":21,"question":"What does Proposition 2.5 state about the conditional law of X1 given Xt?","ground_truth_doc":"doc1"}
+{"question_id":22,"question":"What is stochastic localization?","ground_truth_doc":"doc1"}
+{"question_id":23,"question":"How is the DDPM reverse SDE connected to the Föllmer process?","ground_truth_doc":"doc1"}
+{"question_id":24,"question":"What is the Euler–Maruyama scheme used for in this paper?","ground_truth_doc":"doc1"}
+{"question_id":25,"question":"What is the purpose of early stopping in the discretized DDPM sampler?","ground_truth_doc":"doc1"}
