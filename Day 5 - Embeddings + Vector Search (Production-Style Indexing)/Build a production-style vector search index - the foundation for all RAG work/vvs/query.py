@@ -1,98 +1,84 @@
 import json
-import numpy as np
 import os
-from pathlib import Path
 
 from google import genai
+from google.cloud import aiplatform, storage
 from dotenv import load_dotenv
 
 load_dotenv()
 
+PROJECT_ID = os.getenv("PROJECT_ID")
+LOCATION = os.getenv("LOCATION", "us-central1")
+GCS_BUCKET = os.getenv("GCS_BUCKET", "")
+INDEX_ENDPOINT_ID = os.getenv("INDEX_ENDPOINT_ID")
+DEPLOYED_INDEX_ID = os.getenv("DEPLOYED_INDEX_ID")
+
 client = genai.Client(
     vertexai=True,
-    project=os.getenv("PROJECT_ID"),
-    location=os.getenv("LOCATION", "us-central1")
+    project=PROJECT_ID,
+    location=LOCATION
 )
 
+aiplatform.init(project=PROJECT_ID, location=LOCATION)
 
-def cosine_similarity(a, b):
-
-    a = np.array(a)
-    b = np.array(b)
-
-    return (
-        np.dot(a, b)
-        /
-        (
-            np.linalg.norm(a)
-            *
-            np.linalg.norm(b)
-        )
-    )
+gcs_client = storage.Client(project=PROJECT_ID)
 
 
-BASE_DIR = Path(__file__).parent
+def query():
 
-VECTOR_FILE = (
-    BASE_DIR
-    / "vector_store"
-    / "embeddings.json"
-)
+    print("Loading metadata from gs://wohlig-rag-pipeline-bucket/vectors/chunks_metadata.json")
 
-print("Loading:", VECTOR_FILE)
+    blob = gcs_client.bucket("wohlig-rag-pipeline-bucket").blob("vectors/chunks_metadata.json")
+    metadata = json.loads(blob.download_as_text())
 
-with open(VECTOR_FILE, "r") as f:
-    vectors = json.load(f)
+    lookup = {
+        f"{item['doc_id']}_{item['chunk_number']}": item
+        for item in metadata
+    }
 
+    question = input("Enter Question: ")
 
-query = input(
-    "Enter Question: "
-)
-
-query_embedding = (
-    client.models.embed_content(
+    query_embedding = client.models.embed_content(
         model="gemini-embedding-001",
-        contents=query
-    )
-)
-
-query_vector = (
-    query_embedding
-    .embeddings[0]
-    .values
-)
-
-results = []
-
-for item in vectors:
-
-    score = cosine_similarity(
-        query_vector,
-        item["embedding"]
+        contents=question,
+        config={"output_dimensionality": 768}
     )
 
-    results.append(
-        (
-            score,
-            item
-        )
+    query_vector = (
+        query_embedding
+        .embeddings[0]
+        .values
     )
 
-results.sort(
-    reverse=True,
-    key=lambda x: x[0]
-)
+    index_endpoint = aiplatform.MatchingEngineIndexEndpoint(
+        index_endpoint_name=INDEX_ENDPOINT_ID
+    )
 
-print("\nTOP 5 RESULTS\n")
+    response = index_endpoint.find_neighbors(
+        deployed_index_id=DEPLOYED_INDEX_ID,
+        queries=[query_vector],
+        num_neighbors=5
+    )
 
-for score, item in results[:5]:
+    if not response or not response[0]:
+        print("No results returned. Ensure the Vertex AI index is populated and deployed.")
+        return
 
-    print("=" * 50)
+    print("\nTOP 5 RESULTS\n")
 
-    print(f"Score: {score:.4f}")
+    for neighbor in response[0]:
 
-    print(f"Doc: {item['doc_id']}")
+        item = lookup.get(neighbor.id)
 
-    print(f"Page: {item['page_number']}")
+        if not item:
+            continue
 
-    print(item["text"][:300])
+        print("=" * 50)
+        print(f"Score: {neighbor.distance:.4f}")
+        print(f"Doc: {item['doc_id']}")
+        print(f"Page: {item['page_number']}")
+        print(item["text"][:300])
+
+
+if __name__ == "__main__":
+    query()

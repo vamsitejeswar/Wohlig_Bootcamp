@@ -1,0 +1,25 @@
+q1| What is the Föllmer process?
+q2| What is the main objective of this paper?
+q3| What error metric is studied in this paper?
+q4| What does DDPM stand for?
+q5| What is the score function in diffusion models?
+q6| What are the three main contributions of the paper?
+q7| What variance schedule is specifically mentioned in the paper?
+q8| What inequality is implied by the Lipschitz-type conditions?
+q9| What transportation cost inequality is discussed?
+q10| What type of target distributions are considered in the paper?
+q11| What process is traditionally used to analyze DDPMs?
+q12| What process does this paper use instead of the reverse Ornstein–Uhlenbeck process?
+q13| What is the relationship between the Föllmer process and Brownian motion?
+q14| What distribution does the Föllmer process match at time 1?
+q15| What stochastic differential equation is satisfied by the Föllmer process?
+q16| What is the Föllmer drift?
+q17| What information-theoretic quantity is related to the Föllmer drift?
+q18| What is relative entropy in this paper?
+q19| What is the relative Fisher information?
+q20| What is the Slepian interpolation?
+q21| What does Proposition 2.5 state about the conditional law of X1 given Xt?
+q22| What is stochastic localization?
+q23| How is the DDPM reverse SDE connected to the Föllmer process?
+q24| What is the Euler–Maruyama scheme used for in this paper?
+q25| What is the purpose of early stopping in the discretized DDPM sampler?
