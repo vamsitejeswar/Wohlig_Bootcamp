@@ -1,0 +1,1 @@
+Average trip durations vary throughout the day, with the shortest trips occurring around 2 AM at 15.3 minutes and the longest in the afternoon, peaking at 26.6 minutes around 3 PM. We also observe a noticeable increase during the morning commute, reaching 24.3 minutes at 7 AM, indicating longer travel times during these busy hours.

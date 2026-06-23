@@ -1,0 +1,1 @@
+For trips where more than two passengers are present, the average travel distance is 6.116 miles. This shows that journeys for larger passenger groups typically cover just over six miles on average.

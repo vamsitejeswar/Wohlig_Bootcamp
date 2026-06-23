@@ -1,0 +1,1 @@
+The 3-day rolling average of daily trip counts was extremely low or non-existent for earlier dates, but experienced a dramatic surge starting in March 2022. Since then, the rolling average has remained consistently high, fluctuating mostly between 8,000 and nearly 10,000 trips per day throughout March.

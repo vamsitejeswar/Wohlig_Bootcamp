@@ -1,0 +1,1 @@
+What is the maximum fare amount recorded in the dataset?

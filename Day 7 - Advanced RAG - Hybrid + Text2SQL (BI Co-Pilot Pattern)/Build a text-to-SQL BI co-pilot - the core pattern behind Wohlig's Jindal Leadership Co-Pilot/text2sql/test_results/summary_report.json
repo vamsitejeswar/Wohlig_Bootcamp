@@ -1,0 +1,137 @@
+[
+  {
+    "query_id": "Q01_easy",
+    "question": "How many total trips are in the dataset?",
+    "success": true,
+    "rows": 1,
+    "chart_type": "none",
+    "was_corrected": false,
+    "summary": "Our dataset contains a substantial number of trips, with a total of 500,000 trips recorded. This large volume provides a solid foundation for further analysis."
+  },
+  {
+    "query_id": "Q02_easy",
+    "question": "What is the average trip distance across all trips?",
+    "success": true,
+    "rows": 1,
+    "chart_type": "none",
+    "was_corrected": false,
+    "summary": "Across all trips, the average distance traveled is approximately 6.26 miles. This means that, on typical journey, users cover just over six and a quarter miles."
+  },
+  {
+    "query_id": "Q03_easy",
+    "question": "What is the maximum fare amount recorded in the dataset?",
+    "success": true,
+    "rows": 1,
+    "chart_type": "none",
+    "was_corrected": false,
+    "summary": "The highest fare amount recorded in our dataset is $474.00. This indicates the maximum price paid for a single fare within the analyzed period."
+  },
+  {
+    "query_id": "Q04_easy",
+    "question": "How many trips were completed by each vendor?",
+    "success": true,
+    "rows": 4,
+    "chart_type": "bar",
+    "was_corrected": false,
+    "summary": "Vendor 2 completed the overwhelming majority of trips, totaling 356,631, significantly outperforming Vendor 1 which had 142,630 trips. The remaining vendors, such as Vendor 6 with 738 trips and Vendor 5 with just 1 trip, contributed very little to the overall volume."
+  },
+  {
+    "query_id": "Q05_easy",
+    "question": "What is the total number of passengers carried across all trips?",
+    "success": true,
+    "rows": 1,
+    "chart_type": "none",
+    "was_corrected": false,
+    "summary": "Across all trips, a grand total of 699,992 passengers were carried. This figure represents the overall passenger volume for all services combined."
+  },
+  {
+    "query_id": "Q06_medium",
+    "question": "How many trips happened each month? Order by month.",
+    "success": true,
+    "rows": 8,
+    "chart_type": "bar",
+    "was_corrected": false,
+    "summary": "Trip activity varied significantly throughout the year, with a massive peak in March at 287,112 trips, followed by April with 143,498 trips, and July with 69,375 trips. In stark contrast, other months like January, February, May, June, and December recorded very few trips, mostly in the single digits, indicating highly concentrated activity."
+  },
+  {
+    "query_id": "Q07_medium",
+    "question": "What is the average tip amount grouped by payment type?",
+    "success": true,
+    "rows": 5,
+    "chart_type": "bar",
+    "was_corrected": false,
+    "summary": "We observed a clear difference in average tip amounts across various payment methods. Payment type '1' generates the highest average tip at around $4.46, with payment type '0' also performing well at an average of $3.64. Notably, other payment methods like '2', '3', and '4' show extremely low, or even slightly negative, average tips, suggesting these methods are either not used for tipping or involve unique transaction characteristics."
+  },
+  {
+    "query_id": "Q08_medium",
+    "question": "Which hour of the day has the highest number of trip pickups?",
+    "success": true,
+    "rows": 1,
+    "chart_type": "none",
+    "was_corrected": false,
+    "summary": "The busiest hour for trip pickups is 6 PM (18:00). This indicates that more customers request rides during this evening peak than any other time of day."
+  },
+  {
+    "query_id": "Q09_medium",
+    "question": "What is the average trip distance for trips with more than 2 passengers?",
+    "success": true,
+    "rows": 1,
+    "chart_type": "none",
+    "was_corrected": false,
+    "summary": "For trips where more than two passengers are present, the average travel distance is 6.116 miles. This shows that journeys for larger passenger groups typically cover just over six miles on average."
+  },
+  {
+    "query_id": "Q10_medium",
+    "question": "What are the top 5 trip distances (rounded to nearest mile) by frequency?",
+    "success": true,
+    "rows": 5,
+    "chart_type": "bar",
+    "was_corrected": false,
+    "summary": "The most frequent trip distances are overwhelmingly short, with 1-mile and 2-mile journeys each occurring over 113,000 times. Trips of 3 and 4 miles are also common, though less frequent than the shortest options. Notably, 18-mile trips are the fifth most frequent, with 23,214 occurrences, indicating a secondary popular distance category."
+  },
+  {
+    "query_id": "Q11_hard",
+    "question": "Show the running total (cumulative count) of trips by month.",
+    "success": true,
+    "rows": 9,
+    "chart_type": "bar",
+    "was_corrected": false,
+    "summary": "The cumulative number of trips grew slowly over many years, then saw a rapid acceleration in 2022, adding over 287,000 trips in March alone. By July 2022, the total number of trips reached 500,000, with significant activity also seen in April, despite low counts in May and June."
+  },
+  {
+    "query_id": "Q12_hard",
+    "question": "For each hour of the day, what percentage of trips had a trip distance above 5 miles?",
+    "success": true,
+    "rows": 24,
+    "chart_type": "bar",
+    "was_corrected": false,
+    "summary": "The percentage of trips exceeding 5 miles varies significantly throughout the day, peaking in the early morning hours. Specifically, nearly 60% of trips taken at 5 AM are longer than 5 miles, suggesting a prevalence of longer commutes or journeys at that time. Conversely, the late afternoon and evening hours, particularly at 6 PM, see the lowest proportion of longer trips, with only about 21% exceeding 5 miles."
+  },
+  {
+    "query_id": "Q13_hard",
+    "question": "What is the average trip duration in minutes grouped by hour of pickup?",
+    "success": true,
+    "rows": 24,
+    "chart_type": "bar",
+    "was_corrected": false,
+    "summary": "Average trip durations vary throughout the day, with the shortest trips occurring around 2 AM at 15.3 minutes and the longest in the afternoon, peaking at 26.6 minutes around 3 PM. We also observe a noticeable increase during the morning commute, reaching 24.3 minutes at 7 AM, indicating longer travel times during these busy hours."
+  },
+  {
+    "query_id": "Q14_hard",
+    "question": "Using a window function, rank each vendor by their total trip count per month.",
+    "success": true,
+    "rows": 16,
+    "chart_type": "bar",
+    "was_corrected": true,
+    "summary": "Our analysis indicates that Vendor 2 consistently ranks as the top performer each month based on total trip count. For instance, in March 2022, Vendor 2 completed over 203,000 trips, vastly exceeding Vendor 1's 83,520 trips and Vendor 6's 476 trips, a trend seen across all recent months like April and July."
+  },
+  {
+    "query_id": "Q15_hard",
+    "question": "What is the 3-day rolling average of daily trip counts? Show date and rolling average.",
+    "success": true,
+    "rows": 101,
+    "chart_type": "line",
+    "was_corrected": false,
+    "summary": "The 3-day rolling average of daily trip counts was extremely low or non-existent for earlier dates, but experienced a dramatic surge starting in March 2022. Since then, the rolling average has remained consistently high, fluctuating mostly between 8,000 and nearly 10,000 trips per day throughout March."
+  }
+]

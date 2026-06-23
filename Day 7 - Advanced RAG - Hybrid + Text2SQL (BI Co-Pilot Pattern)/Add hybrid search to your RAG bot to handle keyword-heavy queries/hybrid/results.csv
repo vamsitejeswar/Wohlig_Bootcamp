@@ -1,0 +1,41 @@
+question_id,query_type,question,dense_faithfulness,hybrid_faithfulness,dense_answer_relevancy,hybrid_answer_relevancy,dense_context_precision,hybrid_context_precision,dense_context_recall,hybrid_context_recall,dense_avg,hybrid_avg,lift
+q01,semantic,What is the Föllmer process?,1.0,0.0,1.0,0.0,0.1,0.2,0.1,0.05,0.55,0.0625,-0.4875
+q02,semantic,How is the Föllmer process related to the Schrödinger bridge problem?,0.0,0.0,0.0,0.7,0.8,0.4,0.1,0.1,0.225,0.3,0.075
+q03,semantic,What is the Föllmer drift and how is it computed?,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.0,0.025,0.0,-0.025
+q04,semantic,How does the Föllmer process connect to entropy-regularized optimal transport?,0.0,0.0,0.0,0.0,1.0,0.0,0.15,0.1,0.2875,0.025,-0.2625
+q05,semantic,What is the relationship between the Föllmer process and score functions?,0.0,1.0,1.0,0.1,0.8,0.1,0.1,0.3,0.475,0.375,-0.1
+q06,semantic,How is the Föllmer process applied in generative modeling?,1.0,1.0,1.0,1.0,0.2,1.0,0.4,0.1,0.65,0.775,0.125
+q07,semantic,What is Wasserstein distance used for in DDPMs?,1.0,0.0,0.1,0.0,0.2,0.7,0.2,0.5,0.375,0.3,-0.075
+q08,semantic,How does the forward diffusion process work in DDPMs?,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.025,0.0,-0.025
+q09,semantic,What is the simplified training objective in DDPMs?,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+q10,semantic,How does the reverse diffusion process work in DDPMs?,1.0,1.0,0.3,0.0,0.0,0.1,0.0,0.0,0.325,0.275,-0.05
+q11,semantic,What neural network architecture is used for the denoising function in DDPMs?,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.25,0.0
+q12,semantic,What is the ELBO in the context of DDPMs?,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+q13,semantic,What noise schedule is used in DDPMs and why does it matter?,0.0,1.0,0.0,0.1,0.1,0.1,0.1,0.0,0.05,0.3,0.25
+q14,semantic,How do DDPMs compare to GANs in terms of sample quality and training stability?,0.0,1.0,0.0,0.1,0.15,0.2,0.0,0.0,0.0375,0.325,0.2875
+q15,semantic,What is the main contribution of the Oxford paper on wide neural networks?,0.0,0.0,1.0,0.0,0.6,0.0,0.35,0.5,0.4875,0.125,-0.3625
+q16,semantic,What is the Neural Tangent Kernel (NTK) and what does it capture?,0.0,1.0,0.0,0.0,1.0,0.7,0.9,1.0,0.475,0.675,0.2
+q17,semantic,What happens to a neural network in the infinite-width limit under NTK parameterization?,1.0,1.0,0.9,0.7,0.4,0.4,0.1,1.0,0.6,0.775,0.175
+q18,semantic,What is the feature learning regime in wide neural networks?,0.0,0.0,0.0,0.1,1.0,0.7,0.0,0.1,0.25,0.225,-0.025
+q19,semantic,How does mean-field theory apply to wide neural networks?,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.1,0.25,0.275,0.025
+q20,semantic,What is the difference between NTK parameterization and mean-field (μP) parameterization?,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.1,0.025,0.025,0.0
+q21,semantic,What is score matching and how does it relate to diffusion models?,0.0,0.0,0.0,0.0,0.8,0.7,0.1,0.0,0.225,0.175,-0.05
+q22,semantic,What is the connection between optimal transport and generative modeling?,1.0,1.0,0.7,0.0,0.7,0.4,1.0,1.0,0.85,0.6,-0.25
+q23,semantic,How is KL divergence used in the training of diffusion models?,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.25
+q24,semantic,What is the relationship between denoising score matching and DDPM training?,1.0,0.0,0.0,0.0,0.1,0.7,0.0,0.0,0.275,0.175,-0.1
+q25,semantic,What mathematical property ensures diffusion models can approximate any data distribution?,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.0,-0.25
+q26,semantic,What is the recipe for making chocolate cake?,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.0,-0.25
+q27,semantic,Who founded Google and in what year was it incorporated?,0.0,0.0,0.0,0.8,0.0,0.0,0.0,0.0,0.0,0.2,0.2
+q28,semantic,What is the current population of India?,1.0,1.0,0.8,1.0,0.0,0.0,0.0,0.0,0.45,0.5,0.05
+q29,semantic,How do you build a REST API using FastAPI in Python?,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+q30,semantic,What is the capital city of Australia?,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+q31,keyword,What is FedHybrid and how does it differ from FedSGD?,0.0,1.0,0.0,0.0,0.1,0.0,0.4,0.4,0.125,0.35,0.225
+q32,keyword,Explain the FedNewton estimator and its communication cost,0.0,0.0,0.0,0.0,0.1,0.0,0.05,0.1,0.0375,0.025,-0.0125
+q33,keyword,What is µ-GDP privacy in federated learning?,1.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,0.25,0.025,-0.225
+q34,keyword,What experiments were run on CIFAR-10 and MNIST in the federated learning paper?,0.0,0.0,1.0,0.1,0.0,0.0,1.0,0.3,0.5,0.1,-0.4
+q35,keyword,What is the SCAFFOLD method in federated learning?,1.0,0.0,0.1,0.0,0.0,0.0,0.0,0.0,0.275,0.0,-0.275
+q36,keyword,What is the L_simple training objective in DDPMs?,0.0,0.0,0.6,0.0,0.0,0.0,0.0,0.0,0.15,0.0,-0.15
+q37,keyword,What is the U-Net architecture used for in DDPMs?,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.25,0.0
+q38,keyword,What is FedProx in federated learning?,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.25,0.0
+q39,keyword,What is the minimax lower bound on MSE in private federated learning?,1.0,1.0,0.1,0.0,0.0,0.1,0.1,0.1,0.3,0.3,0.0
+q40,keyword,What is FedAvg and how does it work in federated learning?,0.0,0.0,0.0,0.0,0.4,0.1,0.1,0.1,0.125,0.05,-0.075

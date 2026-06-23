@@ -1,0 +1,1 @@
+The busiest hour for trip pickups is 6 PM (18:00). This indicates that more customers request rides during this evening peak than any other time of day.

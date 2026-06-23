@@ -1,0 +1,1 @@
+What is the average trip distance across all trips?

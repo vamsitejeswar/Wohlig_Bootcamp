@@ -1,0 +1,1 @@
+Our dataset contains a substantial number of trips, with a total of 500,000 trips recorded. This large volume provides a solid foundation for further analysis.

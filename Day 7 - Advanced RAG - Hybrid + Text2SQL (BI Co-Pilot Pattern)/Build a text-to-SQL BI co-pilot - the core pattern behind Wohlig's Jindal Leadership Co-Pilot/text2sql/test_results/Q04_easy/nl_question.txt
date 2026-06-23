@@ -1,0 +1,1 @@
+How many trips were completed by each vendor?

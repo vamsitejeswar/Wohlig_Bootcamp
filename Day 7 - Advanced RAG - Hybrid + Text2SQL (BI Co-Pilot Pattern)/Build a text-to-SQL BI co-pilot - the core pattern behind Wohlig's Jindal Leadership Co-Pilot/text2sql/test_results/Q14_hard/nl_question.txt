@@ -1,0 +1,1 @@
+Using a window function, rank each vendor by their total trip count per month.

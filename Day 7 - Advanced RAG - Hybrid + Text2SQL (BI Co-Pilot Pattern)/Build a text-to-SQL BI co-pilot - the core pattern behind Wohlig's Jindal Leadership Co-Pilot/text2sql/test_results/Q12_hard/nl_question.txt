@@ -1,0 +1,1 @@
+For each hour of the day, what percentage of trips had a trip distance above 5 miles?

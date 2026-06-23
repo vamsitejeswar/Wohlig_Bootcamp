@@ -1,0 +1,1 @@
+The most frequent trip distances are overwhelmingly short, with 1-mile and 2-mile journeys each occurring over 113,000 times. Trips of 3 and 4 miles are also common, though less frequent than the shortest options. Notably, 18-mile trips are the fifth most frequent, with 23,214 occurrences, indicating a secondary popular distance category.

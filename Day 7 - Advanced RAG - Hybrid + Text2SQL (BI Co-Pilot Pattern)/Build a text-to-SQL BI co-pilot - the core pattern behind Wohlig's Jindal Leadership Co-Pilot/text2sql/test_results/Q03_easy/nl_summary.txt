@@ -1,0 +1,1 @@
+The highest fare amount recorded in our dataset is $474.00. This indicates the maximum price paid for a single fare within the analyzed period.

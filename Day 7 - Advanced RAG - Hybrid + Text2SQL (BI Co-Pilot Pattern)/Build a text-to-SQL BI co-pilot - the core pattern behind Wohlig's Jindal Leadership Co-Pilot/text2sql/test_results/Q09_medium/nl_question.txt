@@ -1,0 +1,1 @@
+What is the average trip distance for trips with more than 2 passengers?

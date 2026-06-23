@@ -1,0 +1,1 @@
+Show the running total (cumulative count) of trips by month.
