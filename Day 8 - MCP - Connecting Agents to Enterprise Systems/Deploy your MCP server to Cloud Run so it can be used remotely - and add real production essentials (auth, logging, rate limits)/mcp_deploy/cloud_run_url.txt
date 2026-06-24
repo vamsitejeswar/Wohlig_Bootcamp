@@ -1,0 +1,14 @@
+SERVICE_URL=https://bootcamp-mcp-server-qsnv3hviuq-uc.a.run.app
+
+# Canonical regional URL:
+# https://bootcamp-mcp-server-465203017930.us-central1.run.app
+
+# Active revision: bootcamp-mcp-server-00003-lzg
+
+# Test auth:
+curl -X POST \
+  -H "x-api-key: wohlig-mcp-key-2024" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"test","version":"1.0"}}}' \
+  https://bootcamp-mcp-server-qsnv3hviuq-uc.a.run.app/mcp
