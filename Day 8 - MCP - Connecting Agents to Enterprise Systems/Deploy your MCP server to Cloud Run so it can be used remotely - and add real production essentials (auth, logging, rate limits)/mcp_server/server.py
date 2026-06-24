@@ -1,17 +1,3 @@
-"""
-server.py
----------
-Wohlig Enterprise MCP Server — Cloud Run edition.
-
-Runs as an HTTP server with 3 middleware layers:
-  1. LoggingMiddleware  — logs every request to Cloud Logging via stdout
-  2. RateLimitMiddleware — max 60 requests/minute per API key
-  3. AuthMiddleware     — rejects requests without a valid x-api-key header
-
-Run locally:  PORT=8080 python server.py
-Cloud Run:    deployed via deploy.sh
-"""
-
 import os
 import uvicorn
 from mcp.server.fastmcp import FastMCP
@@ -25,10 +11,9 @@ from middleware.auth       import AuthMiddleware
 from middleware.rate_limit import RateLimitMiddleware
 from middleware.logging    import LoggingMiddleware
 
-# ── MCP server ─────────────────────────────────────────────────────────────────
 mcp = FastMCP(
     name="wohlig-enterprise",
-    host="0.0.0.0",  # disables auto DNS-rebinding protection (Cloud Run handles this)
+    host="0.0.0.0",
     instructions=(
         "Gateway to BigQuery, GCS, and Slack. "
         "Always prefer read-only operations. "
@@ -41,13 +26,11 @@ mcp.tool()(list_gcs_objects)
 mcp.tool()(read_gcs_object)
 mcp.tool()(send_slack_message)
 
-# ── ASGI app + middleware stack ────────────────────────────────────────────────
 app = mcp.streamable_http_app()
 app.add_middleware(LoggingMiddleware)
 app.add_middleware(RateLimitMiddleware)
 app.add_middleware(AuthMiddleware)
 
-# ── Entry point ────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 8080))
     uvicorn.run(app, host="0.0.0.0", port=port, proxy_headers=True, forwarded_allow_ips="*")

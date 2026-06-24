@@ -43,3 +43,9 @@ Filter: `resource.type="cloud_run_revision" resource.labels.service_name="bootca
 FastMCP defaults to `host="127.0.0.1"` which auto-enables DNS rebinding protection,
 blocking any non-localhost Host header. Fix: pass `host="0.0.0.0"` to FastMCP()
 so it skips the auto-protection. Cloud Run's HTTPS layer handles this at the infra level.
+
+
+##To delete deployed mcp server in cloud run
+
+gcloud run services delete bootcamp-mcp-server --region us-central1
+gcloud container images delete gcr.io/wohlig/bootcamp-mcp-server --force-delete-tags
