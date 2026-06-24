@@ -9,7 +9,7 @@ os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "true"
 
 MCP_SERVER_URL = os.environ.get(
     "MCP_SERVER_URL",
-    "https://bootcamp-mcp-server-qsnv3hviuq-uc.a.run.app/mcp"
+    "https://bootcamp-mcp-server-465203017930.us-central1.run.app/mcp"
 )
 MCP_API_KEY = os.environ.get(
     "MCP_API_KEY",
