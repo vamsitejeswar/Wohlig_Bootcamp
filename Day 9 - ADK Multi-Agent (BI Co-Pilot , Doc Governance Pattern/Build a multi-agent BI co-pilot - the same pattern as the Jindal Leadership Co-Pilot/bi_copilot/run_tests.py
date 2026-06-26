@@ -18,17 +18,25 @@ Run:
 import asyncio
 import json
 import os
+import sys
 from pathlib import Path
+
+# Make sure the parent of bi_copilot/ is on sys.path so
+# "from bi_copilot.orchestrator import root_agent" resolves correctly
+# regardless of which directory the script is run from.
+_PROJECT_ROOT = Path(__file__).parent.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
 
 from dotenv import load_dotenv
 
-load_dotenv(Path(__file__).parent / ".env")
+load_dotenv(_PROJECT_ROOT / ".env")
 
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.genai import types
 
-from orchestrator import root_agent
+from bi_copilot.orchestrator import root_agent
 
 # ── Test queries ──────────────────────────────────────────────────────────────
 TEST_QUERIES = [

@@ -1,0 +1,11 @@
+Agent Name: Bootcamp HR Policy Assistant
+Platform: Gemini Enterprise (Wohlig GE instance)
+
+Agent URL:
+https://vertexaisearch.cloud.google.com/home/cid/23330245-8a3c-4173-95c2-f63b34041e9b/agent-builder/8911996998600505969
+
+(Replace with actual published agent URL after publishing to Agent Gallery)
+
+Admin Console (agent management):
+https://console.cloud.google.com/gemini-enterprise
+Project: wohlig

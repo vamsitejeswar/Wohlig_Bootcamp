@@ -1,0 +1,10 @@
+google-adk>=2.2.0
+google-cloud-bigquery
+google-cloud-aiplatform
+google-cloud-trace
+pandas
+db-dtypes
+python-dotenv
+fastapi
+uvicorn[standard]
+pydantic
